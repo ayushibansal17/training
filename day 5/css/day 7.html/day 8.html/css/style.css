@@ -1,0 +1,176 @@
+:root {
+    --primaryColor: #213555;
+    --backgoundColor: #F5EFE7;
+    --primaryAccentColor: #4F709C;
+    --seconadryColor: #D8C4B6;
+    --whiteColor: white;
+    --blackcolor: black;
+    --primaryFont: 'Open Sans', sans-serif;
+    --cursiveFont: 'Open Sans', sans-serif;
+    --navbarHeight: 3rem;
+}
+
+/*Main CSS*/
+body {
+    background-color: var(--backgoundColor);
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+a{
+    text-decoration: none;
+    color: var(--primarycolor);
+
+}
+a:hover{
+    color: var(--primaryAccentColor);
+}
+
+.navigation {
+    background-color: var(--whiteColor);
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+}
+
+.logo {
+    display: flex;
+  padding-left: 20px;
+    width: 12rem;
+    align-items: center;
+
+}
+
+.contactImage{
+    height: 2rem;
+    padding: 8px;
+    margin-right: 40px;
+}
+
+.logoImage{
+    height: 2rem;
+   padding: 8px;
+}
+
+.menuItems {
+    flex-grow: 2;
+}
+
+
+.menuItem {
+    margin-left: 20px;
+}
+
+
+.banner{
+    display: flex;
+    height: 450px;
+    background: linear-gradient(45deg, var(--seconadryColor),var(--primaryColor));
+    filter: drop-shadow(0px 3px 4px grey); /*x,y,radius,color*/
+    justify-content: space-around; 
+    align-items:center ;
+    margin-bottom: 5px;
+} 
+
+.bannerImage{
+    height: 300px;
+    border-radius: 100%;
+}
+
+.greeting{
+    font-family: var(--cursiveFont);
+    font-size: 1.25rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.bannerLeft{
+    width: 50%;
+}
+.titleSpan{
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 0.5rem;
+    margin: 5px 0px;
+}
+.description{
+    margin: 30px 0px;
+    line-height: 2rem;
+}
+.showCVButton{
+    background : linear-gradient(
+        white , rgb(205,205,205) , rgb(215,215,215));
+    padding: 10px 15px ;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 3px grey);
+}
+.showCVButton:hover{
+    background-color: linear-gradient(
+        white , rgb(215,215,215)
+    );
+}
+/* services section*/
+.services{
+   /* text-align: center; */
+    margin: 5rem ;
+}
+.servicetext{
+    text-align: center;
+    text-transform: uppercase;
+}
+.textsubheading{
+    color: var(--primaryaccentcolor);
+    letter-spacing: 0.4rem;
+    font-size: 1.25rem;
+}
+.textheading{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.servicecards{
+    margin-top: 30px;
+    display: flex;
+}
+.servicecard{
+    border: 2px solid grey;
+    border-radius: 2px;
+    filter: drop-shadow(1px 1px 2px #aaaaaa);
+    margin: 15px;
+    padding: 40px;
+}
+.servicecard:hover{
+    background-color: whitesmoke;
+    filter: drop-shadow(3px 3px 8px grey);
+}
+.serviceicon{
+    background-color: var(--primarycolor);
+    padding: 40px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.serviceicon{
+    background-color: var(--secondaryColor);
+    width: 50px;
+    height: 50px;
+    padding: 10px; 
+    margin: 2px 10px 10px 2px;
+    border-radius: 10px;  
+}
+.serviceicon:hover{
+    background-color: var(--primaryColor);
+}
+.cardicon{
+    font-size: 50px;
+}
+.cardicon:hover{
+    color: var(--secondaryColor);
+}
+.servicetitle{
+    font-size: 1.5rem;
+}
